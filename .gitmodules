@@ -1,0 +1,3 @@
+[submodule "client-gateway-service"]
+	path = client-gateway-service
+	url = https://github.com/vignesh-this/client-gateway-service
