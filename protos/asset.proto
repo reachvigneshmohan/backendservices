@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package asset;
+
+service AssetService {
+    rpc CreateAsset(CreateAssetRequest) returns (CreateAssetResponse);
+}
+
+message Profile {
+    string registrationNo = 1;
+    string assetId = 2;
+    string assetCategory = 3;
+    string assetType = 4;
+    string assetGroup = 5;
+}
+
+message CreateAssetRequest {
+    Profile profile = 1;
+}
+
+message CreateAssetResponse {
+    string profile = 1;
+}
