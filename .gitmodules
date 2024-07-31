@@ -1,3 +1,42 @@
 [submodule "client-gateway-service"]
 	path = client-gateway-service
 	url = https://github.com/vignesh-this/client-gateway-service
+[submodule "device-gateway-server"]
+	path = device-gateway-server
+	url = https://github.com/vignesh-this/device-gateway-server
+[submodule "rawdata-parsing-service"]
+	path = rawdata-parsing-service
+	url = https://github.com/vignesh-this/rawdata-parsing-service
+[submodule "data-normalization-service"]
+	path = data-normalization-service
+	url = https://github.com/vignesh-this/data-normalization-service
+[submodule "device-command-center-service"]
+	path = device-command-center-service
+	url = https://github.com/vignesh-this/device-command-center-service
+[submodule "auth-service"]
+	path = auth-service
+	url = https://github.com/vignesh-this/auth-service
+[submodule "device-management-service"]
+	path = device-management-service
+	url = https://github.com/vignesh-this/device-management-service
+[submodule "asset-management-service"]
+	path = asset-management-service
+	url = https://github.com/vignesh-this/asset-management-service
+[submodule "driver-management-service"]
+	path = driver-management-service
+	url = https://github.com/vignesh-this/driver-management-service
+[submodule "notification-service"]
+	path = notification-service
+	url = https://github.com/vignesh-this/notification-service
+[submodule "alert-management-service"]
+	path = alert-management-service
+	url = https://github.com/vignesh-this/alert-management-service
+[submodule "geofencing-service"]
+	path = geofencing-service
+	url = https://github.com/vignesh-this/geofencing-service
+[submodule "analytics-service"]
+	path = analytics-service
+	url = https://github.com/vignesh-this/analytics-service
+[submodule "billing-service"]
+	path = billing-service
+	url = https://github.com/vignesh-this/billing-service
