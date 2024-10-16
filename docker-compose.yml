@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   client-gateway-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/client-gateway-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/client-gateway-service:1
     networks:
       - app-network
     deploy:
@@ -16,7 +16,7 @@ services:
       - "1000:1000"
 
   device-gateway-server:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/device-gateway-server:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-gateway-server:1
     networks:
       - app-network
     deploy:
@@ -31,7 +31,7 @@ services:
       - "5001:5001"
 
   rawdata-parsing-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/rawdata-parsing-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/rawdata-parsing-service:1
     networks:
       - app-network
     deploy:
@@ -45,7 +45,7 @@ services:
       - "3001:3001"
 
   data-normalization-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/data-normalization-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/data-normalization-service:1
     networks:
       - app-network
     deploy:
@@ -59,7 +59,7 @@ services:
       - "3002:3002"
 
   device-command-center-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/device-command-center-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-command-center-service:1
     networks:
       - app-network
     deploy:
@@ -73,7 +73,7 @@ services:
       - "3003:3003"
 
   auth-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/auth-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/auth-service:1
     networks:
       - app-network
     deploy:
@@ -88,7 +88,7 @@ services:
       - "50051:50051"
 
   device-management-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/device-management-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-management-service:1
     networks:
       - app-network
     deploy:
@@ -102,7 +102,7 @@ services:
       - "3006:3006"
 
   asset-management-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/asset-management-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/asset-management-service:1
     networks:
       - app-network
     deploy:
@@ -117,7 +117,7 @@ services:
       - "50052:50052"
 
   driver-management-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/driver-management-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/driver-management-service:1
     networks:
       - app-network
     deploy:
@@ -131,7 +131,7 @@ services:
       - "3008:3008"
 
   notification-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/notification-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/notification-service:1
     networks:
       - app-network
     deploy:
@@ -145,7 +145,7 @@ services:
       - "3009:3009"
 
   alert-management-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/alert-management-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/alert-management-service:1
     networks:
       - app-network
     deploy:
@@ -159,7 +159,7 @@ services:
       - "3010:3010"
 
   geofencing-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/geofencing-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/geofencing-service:1
     networks:
       - app-network
     deploy:
@@ -173,7 +173,7 @@ services:
       - "3011:3011"
 
   analytics-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/analytics-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/analytics-service:1
     networks:
       - app-network
     deploy:
@@ -187,7 +187,7 @@ services:
       - "3012:3012"
 
   billing-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/tracer/billing-service:1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/billing-service:1
     networks:
       - app-network
     deploy:
