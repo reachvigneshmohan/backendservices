@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout Git repository') {
             steps {
-                git branch: "${env.BRANCH_NAME}", credentialsId: '2159dd14-bf38-4ba6-8766-f73495d80fac', url: 'https://github.com/reachvigneshmohan/backendservices.git'
+                git branch: "${env.BRANCH_NAME}", credentialsId: 'githubprivateaccess', url: 'https://github.com/reachvigneshmohan/backendservices.git'
             }
         }
 
