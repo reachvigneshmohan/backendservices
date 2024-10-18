@@ -1,8 +1,8 @@
-version: '3.8'
+4version: '3.8'
 
 services:
   client-gateway-service:
-    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/client-gateway-service:client-gateway-service_1
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/client-gateway-service:client-gateway-service_14
     networks:
       - app-network
     deploy:
