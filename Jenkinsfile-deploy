@@ -5,7 +5,8 @@ pipeline {
     environment {
         REPO_URL = 'git@github.com:reachvigneshmohan/backendservices.git'  // Repository with Docker Compose file
         DEPLOY_USER = 'ubuntu'                        // SSH username for the target VM
-        DEPLOY_HOST = '51.20.106.47'                  // IP address of the target VM
+        // DEPLOY_HOST = '51.20.106.47'                  // IP address of the target backend VM
+        DEPLOY_HOST = '51.20.121.116'                  // IP address of the target  front end VM 
         COMPOSE_FILE_PATH = 'docker-compose.yml'     // Relative path to the Docker Compose file in the repo
         AWS_REGION = 'eu-north-1'                     // AWS region for ECR
         ECR_REPO_URL = '857264224373.dkr.ecr.eu-north-1.amazonaws.com'  // AWS ECR URL
