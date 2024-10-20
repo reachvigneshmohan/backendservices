@@ -15,190 +15,190 @@ services:
     ports:
       - "1000:1000"
 
-#  device-gateway-server:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-gateway-server:device-gateway-server_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3000:3000"
-#      - "5001:5001"
-#
-#  rawdata-parsing-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/rawdata-parsing-service:rawdata-parsing-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3001:3001"
-#
-#  data-normalization-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/data-normalization-service:data-normalization-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3002:3002"
-#
-#  device-command-center-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-command-center-service:device-command-center-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3003:3003"
-#
-#  auth-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/auth-service:auth-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3004:3004"
-#      - "50051:50051"
-#
-#  device-management-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-management-service:device-management-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3006:3006"
-#
-#  asset-management-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/asset-management-service:asset-management-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3007:3007"
-#      - "50052:50052"
-#
-#  driver-management-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/driver-management-service:driver-management-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3008:3008"
-#
-#  notification-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/notification-service:notification-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3009:3009"
-#
-#  alert-management-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/alert-management-service:alert-management-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3010:3010"
-#
-#  geofencing-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/geofencing-service:geofencing-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3011:3011"
-#
-#  analytics-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/analytics-service:analytics-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3012:3012"
-#
-#  billing-service:
-#    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/billing-service:billing-service_1
-#    networks:
-#      - app-network
-#    deploy:
-#      replicas: 3
-#      update_config:
-#        parallelism: 1
-#        delay: 10s
-#        failure_action: rollback
-#        order: start-first
-#    ports:
-#      - "3013:3013"
+  device-gateway-server:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-gateway-server:device-gateway-server_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3000:3000"
+      - "5001:5001"
+
+  rawdata-parsing-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/rawdata-parsing-service:rawdata-parsing-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3001:3001"
+
+  data-normalization-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/data-normalization-service:data-normalization-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3002:3002"
+
+  device-command-center-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-command-center-service:device-command-center-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3003:3003"
+
+  auth-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/auth-service:auth-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3004:3004"
+      - "50051:50051"
+
+  device-management-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/device-management-service:device-management-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3006:3006"
+
+  asset-management-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/asset-management-service:asset-management-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3007:3007"
+      - "50052:50052"
+
+  driver-management-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/driver-management-service:driver-management-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3008:3008"
+
+  notification-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/notification-service:notification-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3009:3009"
+
+  alert-management-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/alert-management-service:alert-management-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3010:3010"
+
+  geofencing-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/geofencing-service:geofencing-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3011:3011"
+
+  analytics-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/analytics-service:analytics-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3012:3012"
+
+  billing-service:
+    image: 857264224373.dkr.ecr.eu-north-1.amazonaws.com/billing-service:billing-service_1
+    networks:
+      - app-network
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 1
+        delay: 10s
+        failure_action: rollback
+        order: start-first
+    ports:
+      - "3013:3013"
 
 networks:
   app-network:
